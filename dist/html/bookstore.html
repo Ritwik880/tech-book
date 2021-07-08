@@ -29,6 +29,45 @@
         .pagination a:hover:not(.active) {
             background-color: #ddd;
         }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0)
+            }
+
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1
+            }
+        }
+
+        .animated {
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-fill-mode: both
+        }
+
+        .animatedFadeInUp {
+            opacity: 0
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
     </style>
 
 </head>
@@ -55,8 +94,8 @@
             </div>
         </div>
     </nav>
-    <div class="container my-4">
-        <h1 style="text-align: center; background-color: antiquewhite;">MORE COLLECTION</h1>
+    <h1 style="text-align: center; background-color: antiquewhite;">MORE COLLECTION</h1>
+    <div class="container my-4 fadeInUp animated animatedFadeInUp">
         <ul class="cards fadeInUp animated animatedFadeInUp" data-aos="fade-up">
             <li class="cards_item">
                 <div class="card">
@@ -193,7 +232,8 @@
                     <div class="card_image"><img class="image" src="../image/file-original (13).jpg"></div>
                     <div class="card_content">
                         <h2 class="card_title" style="color: black; font-weight: bold;">ज़िंदगी अभी बाकी है</h2>
-                        <p class="card_text">हर व्यक्ति अपने जीवन का हीरो है। हम हर रोज़ लड़ते हैं| परीक्षा में अच्छे अंक प्राप्त करने के लिए, एक महत्वपूर्ण गलती को ठीक करने के लिए,
+                        <p class="card_text">हर व्यक्ति अपने जीवन का हीरो है। हम हर रोज़ लड़ते हैं| परीक्षा में अच्छे
+                            अंक प्राप्त करने के लिए, एक महत्वपूर्ण गलती को ठीक करने के लिए,
                         </p>
 
                         <a class="btn" target="_blank"
@@ -237,8 +277,8 @@
                     <div class="card_content">
                         <h2 class="card_title" style="color: black; font-weight: bold;">Adeeba Feroz Shah</h2>
                         <p class="card_text">This book "VARIEGATED THOUGHTS" is a collection of poems of different
-                            natures. It also includes a fine assemblage of poems and quotes and nature. 
-                           
+                            natures. It also includes a fine assemblage of poems and quotes and nature.
+
                         </p>
                         <a class="btn" target="_blank"
                             href="https://www.amazon.in/Variegated-Thoughts-Adeeba-Feroz-Shah-ebook/dp/B097N6Y4NB/ref=sr_1_1?dchild=1&keywords=Variegated+Thoughts&qid=1625729858&s=books&sr=1-1">Order
@@ -254,7 +294,7 @@
                         <h2 class="card_title" style="color: black; font-weight: bold;">Sakshi Rebecca Nelson</h2>
                         <p class="card_text">Sakshi Rebecca Nelson, is the author of 'Likeness and Reflections', a poet
                             and an educator. She is also a co – author of 'Beyond Words' (Anthology). She is a
-                            motivational Christian speaker as well. 
+                            motivational Christian speaker as well.
                         </p>
                         <a class="btn" target="_blank"
                             href="https://www.amazon.in/Beauty-Brokenness-Sakshi-Rebecca-Nelson/dp/8195008984/ref=sr_1_1?keywords=Beauty+In+Brokenness&qid=1625730097&s=books&sr=1-1">Order
@@ -269,7 +309,7 @@
                         <h2 class="card_title" style="color: black; font-weight: bold;">Eliyas Johnjoseph</h2>
                         <p class="card_text">This book is related to mother and son endless love story. Most of the
                             scenarios recorded in this book really occurred, mostly characters are drawn from real life.
-                            
+
                         </p>
                         <a class="btn" target="_blank"
                             href="https://www.amazon.in/Always-Eliyas-Johnjoseph/dp/8195008941/ref=sr_1_1?dchild=1&keywords=Eliyas+Johnjoseph&qid=1625730114&s=books&sr=1-1">Order
