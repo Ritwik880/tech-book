@@ -6,19 +6,15 @@
     
   
 }
-
 .navbar{
-    background-color: #b4b2e7;
-    padding-right: 5;
+  background-color: whitesmoke;
 }
 .navbar a{
-    color: white;
+    color: darkblue;
     font-size: 25px;
-}
-.navbar a:hover{
-    color: black;
-    background-color: silver;
-}
+} 
+
+
 img{
     width: 100%;
     height: auto;
@@ -63,7 +59,7 @@ img{
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 40px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
