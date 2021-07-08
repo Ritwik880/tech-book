@@ -12,12 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/image/logo2.png" class="icon" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../image/logo2.png" class="icon" type="image/png">
 
 
     <title>Caroling Pen Publishing</title>
     <style>
+        .pagination a.active {
+            background-color: darkgray;
+            color: black;
+        }
+
+        .nav-item {
+            margin: 10px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
         input[type=text],
         select,
         textarea {
@@ -90,23 +102,23 @@
     <nav class="navbar navbar-expand-lg p-3" class="nav">
         <div class="container-fluid">
             <a class="navbar-brand" style="padding-left: 5px; font-weight: bold;" href="#"><img
-                src="/image/logo2.png" /></a>
+                src="../image/logo2.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span style="background-color: black;" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav" style="margin-left: auto;">
+                <ul class="navbar-nav pagination" style="margin-left: auto;">
                     <li class="nav-item" style="font-weight: bold;">
-                        <a class="nav-link" href="/dist/html/">Home</a>
+                        <a class="nav-link" href="../home.html">Home</a>
                     </li>
                     <li class="nav-item" style="font-weight: bold;">
-                        <a class="nav-link" href="/html/bookstore.html">Bookstore</a>
+                        <a class="nav-link" href="../html/bookstore.html">Bookstore</a>
                     </li>
 
                     <li class="nav-item" style="font-weight: bold;">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link active" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
